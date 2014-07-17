@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2014 Markus Grieder
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>. 
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Label for this package -->
+    <string name="label">NTsync</string>
+    <string name="ui_activity_title">Anmeldung</string>
+    <!-- Message shown in progress dialog while app connects to the server -->
+    <string name="ui_activity_authenticating">Anmelden<xliff:g id="points">\u2026</xliff:g></string>
+    <string name="login_activity_username_label">Benutzername</string>
+    <string name="login_activity_password_label">Passwort</string>
+    <string name="login_activity_ok_button">Anmelden</string>
+    <string name="login_activity_loginfail_text_both">Benutzername oder das Passwort ist falsch.</string>
+    <string name="login_activity_loginfail_text_pwonly">Falsches Passwort.</string>
+    <string name="login_activity_password_missing">Passwort eingeben.</string>
+    <string name="login_activity_username_missing">Benutzername eingeben.</string>
+    <string name="back_button_label">Zurück</string>
+    <string name="cancel_button_label">Abbruch</string>
+    <string name="menu_done">Fertig</string>
+    <string name="menu_cancel">Abbruch</string>
+    <string name="account_type">com.ntsync.android.sync</string>
+    <string name="keypwd_activity_pwd_label">Schlüssel</string>
+    <string name="keypwd_activity_pwd_message">NTsync Schlüssel von einem anderen Gerät eingeben.</string>
+    <string name="keypwd_activity_pwd_save">Speichern</string>
+    <string name="keypwd_activity_pwd1_label">1:</string>
+    <string name="keypwd_activity_pwd2_label">2:</string>
+    <string name="keypwd_activity_pwd3_label">3:</string>
+    <string name="keypwd_activity_pwd4_label">4:</string>
+    <string name="keypwd_activity_pwd5_label">5:</string>
+    <string name="keypwd_activity_pwd_missing">Alle Felder ausfüllen.</string>
+    <string name="keypwd_activity_keygen_failed">Erstellen vom internen Schlüssel schlug fehl.</string>
+    <string name="keypwd_activity_newkey_label">Schlüssel nicht bekannt?</string>
+    <string name="keypwd_activity_resetpwd_message">Kontakt-Sicherheitskopie löschen and neuen Schlüssel erstellen?</string>
+    <string name="keypwd_activity_resetpwd_title">Neuer Schlüssel</string>
+    <string name="ok_button_label">OK</string>
+    <string name="preferences_title">NTsync Konto Einstellungen</string>
+    <string name="preferences_pwd_title">Schlüssel</string>
+    <string name="preferences_pwd_summary">Für die Verschlüsselung</string>
+    <string name="viewkeypwd_activity_message">Schlüssel für die Verschlüsselung der Kontaktdaten.</string>
+    <string name="viewkeypwd_activity_noppwd">Nach der ersten Synchronisation verfügbar.</string>
+    <string name="keypwd_activity_createpwd">Erstelle interner Schlüssel</string>
+    <string name="create_pwd_title">Schlüssel</string>
+    <string name="keypwd_activity_servererror">Bitte später versuchen. Ein Server hat ein Problem.</string>
+    <string name="keypwd_activity_networkerror">Keine Verbindung zum Server. Bitte ihre Internet-Verbindung überprüfen.</string>
+    <string name="login_activity_networkerror">Keine Verbindung zum Server. Bitte ihre Internet-Verbindung überprüfen.</string>
+    <string name="login_activity_servererror">Bitte später versuchen, ein Server hat zur Zeit ein Problem.</string>
+    <string name="samplegroup_name">NTsync</string>
+    <string name="preferences_settings_title">Konto Einstellugen</string>
+    <string name="preferences_settings_summary">Synchronisations-Einstellungen konfigurieren</string>
+    <string name="uri_app_legal_terms">http://www.ntsync.com/legal/terms.html</string>
+    <string name="uri_app_legal_privacy">http://www.ntsync.com/legal/privacy.html</string>
+    <string name="preferences_about_title">Über NTsync</string>
+    <string name="preferences_terms_title">Nutzungsbedingungen</string>
+    <string name="preferences_privacy_title">Datenschutzerklärung</string>
+    <string name="preferences_version_title">Version</string>
+    <string name="preferences_sync_title">Synchronisations-Einstellungen</string>
+    <string name="preferences_sync_wifi_title">Nur WLAN</string>
+    <string name="preferences_sync_wifi_summary">Synchronisation nur durchführen, wenn mit WLAN (Wi-Fi) verbunden.</string>
+    <string name="preferences_synctime_title">Frequenz</string>
+    <string name="preferences_synctime_summary">Wie oft die Kontakte synchronisiert werden sollen.</string>
+    <string name="title_activity_register">Registration NTsync</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Über</string>
+    <string name="action_viewkey">Schlüssel</string>
+    <string name="login_activity_register_button">Konto erstellen</string>
+    <string name="register_activity_ok_button">Registrieren</string>
+    <string name="register_activity_email_label">Deine E-Mail</string>
+    <string name="register_activity_name_label">Dein Name</string>
+    <string name="register_activity_password_label">Passwort</string>
+    <string name="register_activity_terms_message">Durch Klicken auf "Registrieren" stimmen Sie unseren &lt;a href=&quot;http://www.ntsync.com/legal/terms.html&quot;&gt;Nutzungsbedingungen&lt;/&gt; zu und dass Sie die &lt;a href=&quot;http://www.ntsync.com/legal/privacy.html&quot;&gt;Datenschutzerklärung&lt;/a&gt; gelesen haben.</string>
+    <string name="register_activity_success_confirmation">Registration war erfolgreich</string>
+    <string name="register_activity_progress">Registration speichern</string>
+    <string name="register_activity_email_different">E-Mail stimmt nicht überein. Bitte beide Felder überprüfen.</string>
+    <string name="register_activity_email_invalid">Ungültige E-Mail</string>
+    <string name="register_activity_email_missing">E-Mail eingeben. E-Mail wird gebraucht für das Zurücksetzen vom Passwort.</string>
+    <string name="register_activity_name_missing">Name eingeben (zum Beispiel dein Vor- und Nachname)</string>
+    <string name="register_activity_password_missing">Passwort eingeben für ihr Konto.</string>
+    <string name="register_activity_passwort_tooshort">Muss mindestens 6 Zeichen lang sein.</string>
+    <string name="register_activity_registrate_failed">Die Registration ist fehlgeschlagen, bitte später noch einmal versuchen.</string>
+    <string name="register_activity_registrate_networkerror">Keine Verbindung zum Server. Bitte ihre Internet-Verbindung überprüfen.</string>
+    <string name="register_activity_registrate_servererror">Bitte später noch einmal versuchen. Der Server hat ein Problem.</string>
+    <string name="register_activity_retry_message">Registration nochmals durchführen, nachdem das Problem gelöst ist.</string>
+    <string name="register_activity_email_inuse">Diese E-Mai ist bereits registriert. Bitte versuche dich mit dieser E-Mail anzumelden oder melde dich dem NTsync Support.</string>
+    <string name="register_activity_email_rejected">\"Trash mail domains\" werden nicht unterstützt. Bitte eine persönliche E-Mail verwenden.</string>
+    <string name="register_activity_try_later">Der Service wird zur Zeit gewartet, bitte in ein paar Minuten noch einmal versuchen.</string>
+    <string name="title_activity_main">NTsync</string>
+    <string name="main_activity_import">Import<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_login">Anmelden<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_register">Registrieren<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_password">Schlüssel</string>
+    <string name="main_activity_settings">Einstellungen</string>
+    <string name="main_activity_viewaccounts">Konto</string>
+    <string name="main_activity_viewpeople">Kontakte</string>
+    <string name="accountlist_lastsync" formatted="false">Synchronisiert %1s</string>
+    <string name="accountlist_nextsync" formatted="false">Nächster Sync %1s</string>
+    <string name="import_activity_account">Auswahl Konto</string>
+    <string name="import_activity_deleteoption">Importierte lokale Kontakte nach dem Import löschen.</string>
+    <string name="import_activity_startimport">Starte Import</string>
+    <string name="import_activity_import">Import</string>
+    <string name="import_activity_title">Import Kontakte</string>
+    <string name="import_activity_progress">Importiere Kontakte</string>
+    <string name="import_activity_failed">Import fehlgeschlagen.</string>
+    <string name="import_activity_dberror">Import fehlgeschlagen wegen einem Datenbank-Fehler.</string>
+    <string name="import_activity_retry">Bitte noch einmal versuchen.</string>
+    <string name="import_activity_phone_entry">Telefon</string>
+    <string name="import_activity_sim_entry">SIM</string>
+    <string name="keypwd_activity_key_validation_failed">Ungültiger Schlüssel, überprüfen Sie die Eingaben.</string>
+    <string name="import_activity_accounttype_title">Auswahl Quelle</string>
+    <string name="import_activity_accountname_title">Auswahl Ziel Konto</string>
+    <string name="import_activity_nocontacts">Keine Kontakte für einen Import verfügbar. Ein Import von vCard-Dateien erfolgt über die Kontakte App.</string>
+    <string name="import_activity_startcontact_btn">Kontakte</string>
+    <string name="notif_contactnotsynced_content" formatted="false">Abo erweitern für mehr</string>
+    <string name="notif_missing_key" formatted="false">Schlüssel muss eingegeben werden</string>
+    <string name="notif_contactnotsynced_title" formatted="false">%1d/%2d Kontakte synchronisiert</string>
+    <string name="notif_photonotsynced_title">Abo erforderlich für Kontakt-Bilder</string>
+    <string name="notif_photosyncenabled_title">Kontakt-Bilder sind jetzt aktiv</string>
+    <string name="notif_contact_moresupported_title">Mehr Kontakte werden nun unterstützt</string>
+    <string name="notif_contact_lesssupported_title">Weniger Kontakte werden nun unterstützt</string>
+    <string name="notif_contact_supported_content" formatted="false">Bis zu %1d Kontakte bei %2s</string>
+    <string name="shop_activity_title">NTsync Abos</string>
+    <string name="viewaccounts_activity_title">NTsync Konto</string>
+    <string name="reload_btn_text">Neu laden</string>
+    <string name="shop_activity_buybtn">Kaufen</string>
+    <string name="shop_activity_discount" formatted="false">%1d%% jetzt</string>
+    <string name="shop_activity_bigseller">Verkaufshit!</string>
+    <string name="shop_order_name" formatted="false">%1s NTsync Abo</string>
+    <string name="shop_activity_missingprice">Zahlung wurde nicht durchgeführt. Das gewählte Abo ist nicht mehr verfügbar.</string>
+    <string name="shop_activity_invalidpayment">Zahlung war ungültig. Bitte noch einmal versuchen.</string>
+    <string name="shop_activity_verifyprogress">Überprüfe Zahlung</string>
+    <string name="shop_activity_paymentsuccess">Zahlung erfolgreich</string>
+    <string name="shop_activity_invalidprice">Bitte ein anderes Abo auswählen, das gewählte Abo ist nicht mehr verfügbar.</string>
+    <string name="shop_activity_invalidsyntax">Bitte Zahlung noch einmal versuchen, es wurden fehlerhafte Daten empfangen.</string>
+    <string name="shop_activity_notapproved">Bitte ihr PayPal Konto überprüfen, die Zahlung ist nicht abgeschlossen und konnte darum noch nicht akzeptiert werden.</string>
+    <string name="shop_activity_networkerror">Die Überprüfung der Zahlung wird später durchgeführt, da eine Verbindung nicht möglich war.</string>
+    <string name="shop_activity_verifiererror">Die Überprüfung der Zahlung wird später durchgeführt, da ein Dienst zur Zeit ein Problem hat.</string>
+    <string name="shop_activity_verificationfailed">Bitte die PayPal-Transaktions-Id für diese Zahlung dem NTsync-support zuschicken für eine manuelle Überprüfung, da die automatische Überprüfung fehlgeschlagen ist.</string>
+    <string name="shop_activity_paymentalreadyused">Diese Zahlung wurde bereits für ein Abo genutzt. Bei weiteren Fragen hilft der NTsync-Support.</string>
+    <string name="shop_activity_delayedverif_failed">Ihre vorherige Zahlung konnte nicht verarbeitet werden. Grund: %1s</string>
+    <string name="shop_activity_network_forverification">Aktivieren Sie eine Internet-Verbindung, damit Ihre letzte Zahlung abgeschlossen werden kann.</string>
+    <string name="shop_activity_ensurepaymentcancel">Die Überprüfung der letzten Zahlung ist offen. Wenn Sie stoppen wollen, stellen Sie sicher, dass die Zahlung in PayPal abgebrochen ist.</string>
+    <string name="shop_activity_stopverification">Stop Payment verification?</string>
+    <string name="shop_activity_stopbutton">Stop</string>
+    <string name="shop_activity_paymentcanceled">Überprüfen Sie die Zahlung in ihrem PayPal-Konto oder versuchen Sie es noch ein mal, da die Zahlung fehlgeschlagen ist.</string>
+    <string name="shop_activity_pendingverification">Zahlungs-Überprüfung ausstehend</string>
+    <string name="shop_activity_authfailed">Sie müssen angemeldet sein, um eine Zahlung abzuschliessen. Es wird automatisch später versucht die Zahlung abzuschliessen.</string>
+    <string name="accountstatistic_activity_btn">Erweitern<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="accountstatistic_activity_contacts" formatted="false">Kontakte: %1s / %2s</string>
+    <string name="accountstatistic_activity_groups" formatted="false">Gruppen: %1s / %2s</string>
+    <string name="accountstatistic_activity_photosupport" formatted="false">Bild-Unterstützung: %1s</string>
+    <string name="accountstatistic_activity_activ">ja</string>
+    <string name="accountstatistic_activity_inactiv">nein</string>
+    <string name="accountstatistic_activity_validuntil" formatted="false">Abo bis: %1s</string>
+    <string name="accountstatistic_activity_nosubscription">Kein Abo vorhanden</string>
+    <string name="preferences_licenses_title">Open Source Lizenzen</string>
+    <string name="license_activity_title">Open Source Lizenzen NTsync</string>
+    <string name="license_activity_loading">lade<xliff:g id="points">\u2026</xliff:g></string>
+    <string name="license_activity_unavailable">Nicht verfügbar</string>
+    <string name="account_item_contactsicon">Kontakte</string>
+    <string name="account_syncnow">Synchronisieren</string>
+    <string name="errormsg_programmingerror" formatted="false">App Fehler. Versuche es noch einmal oder kontaktiere den Support. Fehler: %1s</string>
+    <string name="sync_network_error" formatted="false">Netzwerk-Fehler. Überprüfe die Internet-Verbindung und versuche es noch einmal. Error: %1s</string>
+    <string name="sync_server_error" formatted="false">Server-Fehler. Bitte später noch einmal versuchen.</string>
+    <string name="not_available">n. v.</string>
+    <string name="accountlist_login_button">Anmelden</string>
+    <string name="accountlist_creataccount_button">Konto erstellen</string>
+    <string name="accountlist_autosync_disabled">Berühren zum Synchronisieren</string>
+    
+    <string name="no_network">Bitte ihre Internet Verbindung aktivieren</string>
+
+    <plurals name="shop_activity_duration">
+        <item quantity="one">1 Month</item>
+        <item quantity="other">%1d Months</item>
+    </plurals>
+
+</resources>

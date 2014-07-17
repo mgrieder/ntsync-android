@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (C) 2014 Markus Grieder
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>. 
+ */
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ntsync.android</groupId>
+		<artifactId>ntsync-android</artifactId>
+		<version>1.2.2</version>
+	</parent>
+
+	<artifactId>ntsync-android-test</artifactId>
+	<packaging>apk</packaging>
+	<name>NTsync Android Client - Instrumentation Tests</name>
+
+	<properties>
+		<jacoco.sessionid>jacoco-${maven.build.timestamp}</jacoco.sessionid>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android-test</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<!-- the target apk, which we will test. will automatically be deployed 
+				to device in pre-integration-test phase. -->
+			<groupId>com.ntsync.android</groupId>
+			<artifactId>ntsync-android-client</artifactId>
+			<version>${project.version}</version>
+			<type>apk</type>
+		</dependency>
+
+		<!-- optional: compile time dependency, in this case so that we can read 
+			from the R.java for example. -->
+		<dependency>
+			<groupId>com.ntsync.android</groupId>
+			<artifactId>ntsync-android-client</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ntsync.shared</groupId>
+			<artifactId>ntsync-shared</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.madgag.spongycastle</groupId>
+			<artifactId>core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.android.support</groupId>
+			<artifactId>support-v4</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-android</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.hockeyapp.android</groupId>
+			<artifactId>HockeySDK</artifactId>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>android</groupId>
+					<artifactId>annotations</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.paypal.sdk</groupId>
+			<artifactId>androidsdk</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>	
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>${basedir}/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>emma</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.jacoco</groupId>
+					<artifactId>org.jacoco.agent</artifactId>
+					<classifier>runtime</classifier>
+					<version>${jacoco.version}</version>
+				</dependency>
+			</dependencies>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+						<artifactId>android-maven-plugin</artifactId>
+						<configuration>
+							<test>
+								<coverage>true</coverage>
+								<createReport>true</createReport>
+							</test>
+						</configuration>
+						<extensions>true</extensions>
+						<executions>
+							<execution>
+								<id>pull-coverage</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>pull</goal>
+								</goals>
+								<configuration>
+									<pullSource>/data/data/com.ntsync.android.sync/files/coverage.ec</pullSource>
+									<!-- <pullSource>/data/data/com.ntsync.android.sync/files/jacoco.me</pullSource> -->
+
+									<pullDestination>${project.basedir}/../ntsync-android-client/target/jacoco.exec</pullDestination>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

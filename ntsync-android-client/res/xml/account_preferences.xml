@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2014 Markus Grieder
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>. 
+ */
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preferences_title" />
+
+    <PreferenceScreen
+        android:key="account_settings"
+        android:summary="@string/preferences_settings_summary"
+        android:title="@string/preferences_settings_title" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.ntsync.android.sync.activities.SettingsPreferenceActivity"
+            android:targetPackage="com.ntsync.android.sync" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="password"
+        android:summary="@string/preferences_pwd_summary"
+        android:title="@string/preferences_pwd_title" >
+        <intent
+            android:action="com.ntsync.android.sync.activities.ViewKeyPasswordActivity.SETUP"
+            android:targetClass="com.ntsync.android.sync.activities.ViewKeyPasswordActivity"
+            android:targetPackage="com.ntsync.android.sync" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

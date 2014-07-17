@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2014 Markus Grieder
+ *
+ * This file is based on strings.xml from the SampleSyncAdapter-Example in Android SDK
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>. 
+ *
+ *
+ *
+ * Copyright (c) 2010, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributtextView.setVisibility(View.VISIBLE);
+			textView.setText(getText(msgId));ed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing perpreferences_sync_wifi_titlemissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="empty"></string>
+    <!-- Label for this package -->
+    <string name="label">NTsync</string>
+    <string name="ui_activity_title">Log in</string>
+    <!-- Message shown in progress dialog while app connects to the server -->
+    <string name="ui_activity_authenticating">Log in<xliff:g id="points">\u2026</xliff:g></string>
+    <string name="login_activity_username_label">Username</string>
+    <string name="login_activity_password_label">Password</string>
+    <string name="login_activity_ok_button">Log in</string>
+    <string name="login_activity_loginfail_text_both">The username or password isn\'t valid. Please try again.</string>
+    <string name="login_activity_loginfail_text_pwonly">Wrong password. Please re-enter your password.</string>
+    <string name="login_activity_password_missing">Type the password for this account.</string>
+    <string name="login_activity_username_missing">Type the username for this account.</string>
+    <string name="back_button_label">Back</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="menu_done">Done</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="account_type">com.ntsync.android.sync</string>
+    <string name="keypwd_activity_pwd_label">Key</string>
+    <string name="keypwd_activity_pwd_message">Please enter key from a existing device.</string>
+    <string name="keypwd_activity_pwd_save">Save</string>
+    <string name="keypwd_activity_pwd1_label">1:</string>
+    <string name="keypwd_activity_pwd2_label">2:</string>
+    <string name="keypwd_activity_pwd3_label">3:</string>
+    <string name="keypwd_activity_pwd4_label">4:</string>
+    <string name="keypwd_activity_pwd5_label">5:</string>
+    <string name="keypwd_activity_pwd_missing">Fill out all key fields.</string>
+    <string name="keypwd_activity_keygen_failed">Generating internal key failed.</string>
+    <string name="keypwd_activity_newkey_label">Key not available?</string>
+    <string name="keypwd_activity_resetpwd_message">Delete contacts backup and create new key?</string>
+    <string name="keypwd_activity_resetpwd_title">New key</string>
+    <string name="ok_button_label">OK</string>
+    <string name="preferences_title">NTsync Account Settings</string>
+    <string name="preferences_pwd_title">Key</string>
+    <string name="preferences_pwd_summary">For data encryption</string>
+    <string name="viewkeypwd_activity_message">Key used to setup a new client.</string>
+    <string name="viewkeypwd_activity_noppwd">Available after the first synchronisation.</string>
+    <string name="keypwd_activity_createpwd">Creating internal key</string>
+    <string name="create_pwd_title">Key</string>
+    <string name="keypwd_activity_servererror">Please try it again later. A server has a problem.</string>
+    <string name="keypwd_activity_networkerror">Can\'t connect to server. Please check your connection.</string>
+    <string name="login_activity_networkerror">Can\'t connect to server. Please check your connection.</string>
+    <string name="login_activity_servererror">Please try its again later. A server has a problem.</string>
+    <string name="samplegroup_name">NTsync</string>
+    <string name="preferences_settings_title">Account Settings</string>
+    <string name="preferences_settings_summary">Configure sync settings</string>
+    <string name="uri_app_legal_terms">http://www.ntsync.com/legal/terms.html</string>
+    <string name="uri_app_legal_privacy">http://www.ntsync.com/legal/privacy.html</string>
+    <string name="preferences_about_title">About NTsync</string>
+    <string name="preferences_terms_title">Terms of Service</string>
+    <string name="preferences_privacy_title">Privacy</string>
+    <string name="preferences_version_title">Version</string>
+    <string name="preferences_sync_title">Synchronization settings</string>
+    <string name="preferences_sync_wifi_title">Only Wi-Fi</string>
+    <string name="preferences_sync_wifi_summary">Do synchronization only when a Wi-Fi is available.</string>
+    <string name="preferences_synctime_title">Frequency</string>
+    <string name="preferences_synctime_summary">How often to synchronize the contacts.</string>
+    <string name="title_activity_register">Registration NTsync</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_viewkey">Key</string>
+    <string name="login_activity_register_button">Create Account</string>
+    <string name="register_activity_ok_button">Register</string>
+    <string name="register_activity_email_label">Your Email</string>
+    <string name="register_activity_name_label">Your Name</string>
+    <string name="register_activity_password_label">Password</string>
+    <string name="register_activity_terms_message">By clicking Register you agree to our &lt;a href=&quot;http://www.ntsync.com/legal/terms.html&quot;&gt;Terms&lt;/&gt; and that you have read our &lt;a href=&quot;http://www.ntsync.com/legal/privacy.html&quot;&gt;Data Use Policy&lt;/a&gt;</string>
+    <string name="register_activity_success_confirmation">Registration was successful</string>
+    <string name="register_activity_progress">Save Registration</string>
+    <string name="register_activity_email_different">Email does not match. Please check both email fields.</string>
+    <string name="register_activity_email_invalid">Invalid email</string>
+    <string name="register_activity_email_missing">Type your email. Email is needed for passwort recovery.</string>
+    <string name="register_activity_name_missing">Type your name (eg your firstname and lastname)</string>
+    <string name="register_activity_password_missing">Please enter a password for your account.</string>
+    <string name="register_activity_passwort_tooshort">Please enter at least 6 chars.</string>
+    <string name="register_activity_registrate_failed">Registration failed. Please try it again later.</string>
+    <string name="register_activity_registrate_networkerror">Communication failed. Please check your connection.</string>
+    <string name="register_activity_registrate_servererror">Please try it again later. Server has a problem.</string>
+    <string name="register_activity_retry_message">Please retry registration after problem is solved.</string>
+    <string name="register_activity_email_inuse">This email is already registrated. Try to login with this email or ask the NTsync support.</string>
+    <string name="register_activity_email_rejected">Trash mail domains are not supported. Please use a personal email.</string>
+    <string name="register_activity_try_later">Try to register in some minutes again, the service is currently under maintenance.</string>
+    <string name="title_activity_main">NTsync</string>
+    <string name="main_activity_import">Import<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_login">Login<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_register">Register<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="main_activity_password">Show Key</string>
+    <string name="main_activity_settings">Settings</string>
+    <string name="main_activity_viewaccounts">Account</string>
+    <string name="accountlist_lastsync" formatted="false">Last synced %1s</string>
+    <string name="accountlist_nextsync" formatted="false">Next sync %1s</string>
+    <string name="import_activity_account">Select Account</string>
+    <string name="import_activity_deleteoption">Delete local contacts after import.</string>
+    <string name="import_activity_startimport">Start import</string>
+    <string name="import_activity_import">Import</string>
+    <string name="import_activity_title">Import Contacts</string>
+    <string name="import_activity_progress">Importing Contacts</string>
+    <string name="import_activity_failed">Import failed.</string>
+    <string name="import_activity_dberror">Import failed due to an Database error.</string>
+    <string name="import_activity_retry">Please try it again.</string>
+    <string name="import_activity_phone_entry">Phone</string>
+    <string name="import_activity_sim_entry">SIM</string>
+    <string name="keypwd_activity_key_validation_failed">Input validation failed. Plese check key fields.</string>
+    <string name="import_activity_accounttype_title">Select source</string>
+    <string name="import_activity_accountname_title">Select Destination Account Name</string>
+    <string name="import_activity_nocontacts">No contacts available for import. For importing vCard Files use the people app.</string>
+    <string name="import_activity_startcontact_btn">People</string>
+    <string name="notif_contactnotsynced_content" formatted="false">Upgrade subscription for more</string>
+    <string name="notif_missing_key" formatted="false">Missing key, input required</string>
+    <string name="notif_contactnotsynced_title" formatted="false">%1d/%2d contacts synchronized</string>
+    <string name="notif_photonotsynced_title">Upgrade subscription for photos</string>
+    <string name="notif_photosyncenabled_title">Photo sync now enabled.</string>
+    <string name="notif_contact_moresupported_title">More contacts now supported</string>
+    <string name="notif_contact_lesssupported_title">Less contacts now supported</string>
+    <string name="notif_contact_supported_content" formatted="false">Up to %1d contacts for %2s</string>
+    <string name="shop_activity_title">NTsync Subscriptions</string>
+    <string name="viewaccounts_activity_title">NTsync Account</string>
+    <string name="reload_btn_text">Reload</string>
+    <string name="shop_activity_buybtn">Buy</string>
+    <string name="shop_activity_discount" formatted="false">%1d%% now</string>
+    <string name="shop_activity_bigseller">Big seller!</string>
+    <string name="shop_order_name" formatted="false">%1s NTsync subscription</string>
+    <string name="shop_activity_missingprice">Payment could not be finished. Could not find the selected Subscription.</string>
+    <string name="shop_activity_invalidpayment">Payment was invalid. Please try it again.</string>
+    <string name="shop_activity_verifyprogress">Verifying Payment</string>
+    <string name="shop_activity_paymentsuccess">Payment successful.</string>
+    <string name="shop_activity_invalidprice">Payment was not accepted due to an old or invalid price. Please try it again.</string>
+    <string name="shop_activity_invalidsyntax">Please try it again, the payment received contained errors.</string>
+    <string name="shop_activity_notapproved">Payment is not completed. Please check your PayPal Account for the exact reason.</string>
+    <string name="shop_activity_networkerror">Payment could not be verified due to a network error. Verification will be performed again later.</string>
+    <string name="shop_activity_verifiererror">Payment verification failed due to a service error. Verification will be performed again later.</string>
+    <string name="shop_activity_verificationfailed">Payment could not be verified. Please send the PayPal-Transaction-Id of this Payment to NTsync-support for manual verification.</string>
+    <string name="shop_activity_paymentalreadyused">This payment is already assigned to a subscription. Please ask NTsync-support if you want to know more.</string>
+    <string name="shop_activity_delayedverif_failed">Your previous Payment could not be processed. Reason: %1s</string>
+    <string name="shop_activity_network_forverification">Activate a internet connection, so that your previous Payment could be verified</string>
+    <string name="shop_activity_ensurepaymentcancel">Verification of your previous Payment is still pending. If you want to stop make sure that your Payment is canceled in PayPal.</string>
+    <string name="shop_activity_stopverification">Stop Payment verification?</string>
+    <string name="shop_activity_stopbutton">Stop</string>
+    <string name="shop_activity_paymentcanceled">Check you PayPal-Account or try it again, the payment failed.</string>
+    <string name="shop_activity_pendingverification">Payment Verification pending</string>
+    <string name="shop_activity_authfailed">You have to be signed in to verificate a Payment.  Verification will be performed again later.</string>
+    <string name="main_activity_viewpeople">People</string>
+    <string name="accountstatistic_activity_btn">Extend<xliff:g id="points">&#8230;</xliff:g></string>
+    <string name="accountstatistic_activity_contacts" formatted="false">Contacts: %1s / %2s</string>
+    <string name="accountstatistic_activity_groups" formatted="false">Groups: %1s / %2s</string>
+    <string name="accountstatistic_activity_photosupport" formatted="false">Photo-Support: %1s</string>
+    <string name="accountstatistic_activity_activ">yes</string>
+    <string name="accountstatistic_activity_inactiv">no</string>
+    <string name="accountstatistic_activity_validuntil" formatted="false">Subscription until: %1s</string>
+    <string name="accountstatistic_activity_nosubscription">No Subscription</string>
+    <string name="preferences_licenses_title">Open Source licenses</string>
+    <string name="license_activity_title">Open Source Licenses NTsync</string>
+    <string name="license_activity_loading">loading<xliff:g id="points">\u2026</xliff:g></string>
+    <string name="license_activity_unavailable">Not available</string>
+    <string name="account_item_contactsicon">Contacts</string>
+    <string name="account_syncnow">Synchronize now</string>
+    <string name="not_available">n.a.</string>
+    <string name="accountlist_login_button">Log in</string>
+    <string name="accountlist_creataccount_button">Create Account</string>
+    <string name="accountlist_autosync_disabled">Touch to sync now</string>
+    <string name="errormsg_programmingerror" formatted="false">App error. Try it again or contact support. Error: %1s</string>
+    <string name="sync_network_error" formatted="false">Network error. Check your Internet Connection and try it again. Error: %1s</string>
+    <string name="sync_server_error" formatted="false">Server error. Please try it again later.</string>
+    <string name="no_network">Please activate your internet connection</string>
+
+    <plurals name="shop_activity_duration">
+        <item quantity="one">1 Month</item>
+        <item quantity="other">%1d Months</item>
+    </plurals>
+
+</resources>

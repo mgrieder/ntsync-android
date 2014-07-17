@@ -1,0 +1,64 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keep public class javax.net.ssl.**
+-keepclassmembers public class javax.net.ssl.** {
+  *;
+}
+
+-keep public class org.apache.http.**
+-keepclassmembers public class org.apache.http.** {
+  *;
+}
+
+-keepclassmembers class net.hockeyapp.android.UpdateFragment { 
+  *;
+}
+
+-keepnames class com.fasterxml.jackson.** { *; }
+
+-dontwarn com.fasterxml.jackson.databind.ext.DOMSerializer
+#-dontwarn org.w3c.dom.bootstrap.DOMImplementationRegistry
+-keepattributes EnclosingMethod
+
+-keepclassmembers class com.ntsync.shared.Price {
+  public void set*(***);
+  public *** get*();
+  public *** is*();
+}
+
+-keepclassmembers class com.ntsync.android.sync.shared.AccountSyncResult {
+  public void set*(***);
+  public *** get*();
+  public *** is*();
+}
+
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable
