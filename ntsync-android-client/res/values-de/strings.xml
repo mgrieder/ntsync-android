@@ -186,8 +186,8 @@
     <string name="no_network">Bitte ihre Internet Verbindung aktivieren</string>
 
     <plurals name="shop_activity_duration">
-        <item quantity="one">1 Month</item>
-        <item quantity="other">%1d Months</item>
+        <item quantity="one">1 Monat</item>
+        <item quantity="other">%1d Monate</item>
     </plurals>
 
 </resources>
