@@ -43,7 +43,7 @@ public class AboutActivity extends PreferenceActivity {
 		super.onCreate(icicle);
 		SystemHelper.initSystem(this);
 		addPreferencesFromResource(R.xml.preferences_about);
-		AbstractFragmentActivity.setupActionBar(this);
+		AbstractFragmentActivity.showHomeUp(this);
 		
 		try {
 			findPreference("version")

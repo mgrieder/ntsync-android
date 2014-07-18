@@ -81,7 +81,6 @@ public class MainActivity extends FragmentActivity {
 			}
 		}
 		initViewPeopleBtn();
-		AbstractFragmentActivity.setupActionBar(this);
 	}
 
 	@Override

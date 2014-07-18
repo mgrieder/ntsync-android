@@ -54,14 +54,14 @@ public abstract class AbstractFragmentActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		SystemHelper.initSystem(this);
 		// Show the Up button in the action bar.
-		setupActionBar(this);
+		showHomeUp(this);
 	}
 
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	public static void setupActionBar(Activity activity) {
+	public static void showHomeUp(Activity activity) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			HoneycombHelper.activateHomeUp(activity);
 		}

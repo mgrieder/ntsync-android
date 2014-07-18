@@ -42,7 +42,7 @@ public class SettingsPreferenceActivity extends PreferenceActivity {
 		addPreferencesFromResource(R.xml.preferences_sync);
 		Preference timePref = findPreference("sync_time");
 		timePref.setOnPreferenceChangeListener(syncTimeChange);
-		AbstractFragmentActivity.setupActionBar(this);
+		AbstractFragmentActivity.showHomeUp(this);
 	}
 
 	@Override
