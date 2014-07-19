@@ -257,7 +257,7 @@ public final class NetworkUtilities {
 			byte[] srpPassword) throws NetworkErrorException, ServerException {
 		Pair<String, byte[]> data = authenticate(context, username, null,
 				srpPassword);
-		return data.left;
+		return data != null ? data.left : null;
 	}
 
 	@SuppressLint("TrulyRandom")
@@ -303,7 +303,8 @@ public final class NetworkUtilities {
 
 			byte[] validSRPPassword = srpPassword;
 			if (validSRPPassword == null) {
-				validSRPPassword = SRP6Helper.createSRPPassword(password, pwdSalt);
+				validSRPPassword = SRP6Helper.createSRPPassword(password,
+						pwdSalt);
 			}
 
 			// Step 2
@@ -355,7 +356,7 @@ public final class NetworkUtilities {
 				authtoken = null;
 			}
 			if (authtoken != null) {
-				returnData = new Pair<String, byte[]>(authtoken, srpPassword);
+				returnData = new Pair<String, byte[]>(authtoken, validSRPPassword);
 			}
 
 		} catch (CryptoException e) {
