@@ -24,7 +24,7 @@
 
 	<groupId>com.ntsync.android</groupId>
 	<artifactId>ntsync-android</artifactId>
-	<version>1.2.2</version>
+	<version>1.3.0</version>
 	<packaging>pom</packaging>
 	<name>NTsync Android Client - Tests &amp; Client</name>
 	<description>Android Client for NTsync</description>
