@@ -4,8 +4,7 @@ Android Client for NTsync
 An Android client for [NTsync](http://www.ntsync.com) (Encrypted Backup and Synchronization of Contacts).
 
 - Website: http://www.ntsync.com
-
-
+- [Releases Binaries](https://github.com/mgrieder/ntsync-android/releases)
 
 Build
 -----
